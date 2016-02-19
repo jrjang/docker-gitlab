@@ -15,7 +15,8 @@ ENV GITLAB_INSTALL_DIR="${GITLAB_HOME}/gitlab" \
     GITLAB_WORKHORSE_INSTALL_DIR="${GITLAB_HOME}/gitlab-workhorse" \
     GITLAB_DATA_DIR="${GITLAB_HOME}/data" \
     GITLAB_BUILD_DIR="${GITLAB_CACHE_DIR}/build" \
-    GITLAB_RUNTIME_DIR="${GITLAB_CACHE_DIR}/runtime"
+    GITLAB_RUNTIME_DIR="${GITLAB_CACHE_DIR}/runtime" \
+    GITLAB_TIMEZONE="Taipei"
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv E1DD270288B4E6030699E45FA1715D88E1DF1F24 \
  && echo "deb http://ppa.launchpad.net/git-core/ppa/ubuntu trusty main" >> /etc/apt/sources.list \
