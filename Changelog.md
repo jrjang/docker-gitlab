@@ -2,6 +2,12 @@
 
 This file only reflects the changes that are made in this image. Please refer to the upstream GitLab [CHANGELOG](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CHANGELOG) for the list of changes in GitLab.
 
+**8.5.4**
+- gitlab: upgrade to CE v8.5.4
+
+**8.5.3**
+- gitlab: upgrade to CE v8.5.3
+
 **8.5.1**
 - gitlab: upgrade to CE v8.5.1
 
