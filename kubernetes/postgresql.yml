@@ -15,6 +15,8 @@ spec:
           value: passw0rd
         - name: DB_NAME
           value: gitlab_production
+        - name: DB_EXTENSION
+          value: pg_trgm
       ports:
         - containerPort: 5432
           protocol: TCP
@@ -22,7 +24,7 @@ spec:
         - mountPath: /var/lib/postgresql
           name: data
       livenessProbe:
-        TCPSocket:
+        tcpSocket:
           port: 5432
         initialDelaySeconds: 30
         timeoutSeconds: 5
